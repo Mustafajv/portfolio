@@ -1,38 +1,4 @@
-export type PortfolioProject = {
-  name: string;
-  description: string;
-  stack: readonly string[];
-};
-
-export type PortfolioContent = {
-  identity: {
-    firstName: string;
-    availability: string;
-  };
-  hero: {
-    eyebrow: string;
-    intro: string;
-  };
-  projects: readonly PortfolioProject[];
-  capabilities: readonly {
-    title: string;
-    description: string;
-  }[];
-  manifesto: {
-    headline: string;
-    copy: string;
-  };
-  process: readonly {
-    title: string;
-    description: string;
-  }[];
-  contact: {
-    label: string;
-    url: string | null;
-  };
-};
-
-export const portfolioContent: PortfolioContent = {
+export const portfolioContent = {
   identity: {
     firstName: "NAME",
     availability: "Available for select projects",
