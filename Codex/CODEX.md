@@ -14,7 +14,7 @@ The portfolio is intentionally a first build. It uses polished concept content s
 The page is a dark, typography-led editorial experience with an atmospheric Matrix-rain background.
 
 - Base color: `#141414`
-- Accent colors: blue `#5dacdf` and purple `#a020f0`
+- Accent colors: red `#e05b62` and deep red `#a61d3d`
 - Type: Geist for display text and Geist Mono for labels and technical details
 - Layout: oversized type, full-width project rows, grid columns, and divider rules
 - Explicitly avoided: cards, floating panels, rounded content containers, heavy shadows, generic dashboard chrome, and stock imagery
@@ -94,7 +94,7 @@ The hero, capabilities, manifesto, process, and availability label are also in t
 
 `MatrixRain.tsx` preserves the original character-rain feel while making it safe for a production page:
 
-- 70 ms frame delay, 16 px monospace characters, blue-dominant color mix with occasional purple characters
+- 70 ms frame delay, 16 px monospace characters, red-dominant color mix with occasional deep-red characters
 - Canvas sits behind content and cannot intercept clicks or keyboard input
 - High-DPI canvas scaling is capped at 2× for performance
 - Columns are recalculated after browser resizing

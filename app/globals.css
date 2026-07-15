@@ -4,8 +4,8 @@
   --muted: #aaa9a4;
   --line: rgba(240, 240, 237, 0.17);
   --line-strong: rgba(240, 240, 237, 0.35);
-  --blue: #5dacdf;
-  --purple: #a020f0;
+  --blue: #e05b62;
+  --purple: #a61d3d;
   --display: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   --mono: var(--font-geist-mono), "SFMono-Regular", Consolas, monospace;
 }
@@ -232,22 +232,22 @@ a:focus-visible {
   height: 0.45rem;
   background: var(--blue);
   border-radius: 50%;
-  box-shadow: 0 0 1rem rgba(93, 172, 223, 0.85);
+  box-shadow: 0 0 1rem rgba(224, 91, 98, 0.85);
 }
 
 .hero h1 {
   max-width: 11ch;
   margin: clamp(3rem, 8vh, 7rem) 0;
-  font-size: clamp(4.1rem, 10.7vw, 10.3rem);
+  font-size: clamp(4.1rem, 10vw, 10.3rem);
   font-weight: 620;
   letter-spacing: -0.075em;
-  line-height: 0.84;
+  line-height: 0.96;
 }
 
 .hero h1 span,
 .contact h2 span {
   color: transparent;
-  background: linear-gradient(100deg, var(--blue) 12%, #7c8ee8 55%, var(--purple));
+  background: linear-gradient(100deg, var(--blue) 12%, #ce3d52 55%, var(--purple));
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -635,7 +635,7 @@ a.text-link:hover {
   .hero h1 {
     margin-block: 3.5rem;
     font-size: clamp(3.85rem, 18vw, 6rem);
-    line-height: 0.87;
+    line-height: 0.96;
   }
 
   .hero-copy {

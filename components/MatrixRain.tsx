@@ -13,8 +13,8 @@ const FRAME_DELAY = 70;
 const FONT_SIZE = 16;
 const TILE_SIZE = FONT_SIZE + 2;
 const FADE_FACTOR = 0.07;
-const PRIMARY_COLOR = "#5dacdf";
-const SECONDARY_COLOR = "#a020f0";
+const PRIMARY_COLOR = "#e05b62";
+const SECONDARY_COLOR = "#a61d3d";
 
 function randomChar() {
   return String.fromCharCode(Math.floor(Math.random() * (126 - 33) + 33));
