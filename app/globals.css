@@ -6,8 +6,8 @@
   --line-strong: rgba(240, 240, 237, 0.35);
   --blue: #e05b62;
   --purple: #a61d3d;
-  --display: var(--font-geist-sans), Arial, Helvetica, sans-serif;
-  --mono: var(--font-geist-mono), "SFMono-Regular", Consolas, monospace;
+  --display: var(--font-geist-sans, Arial), Helvetica, sans-serif;
+  --mono: var(--font-geist-mono, "SFMono-Regular"), Consolas, monospace;
 }
 
 * {
