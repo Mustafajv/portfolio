@@ -29,20 +29,26 @@ test("server-renders the complete portfolio landing page", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /<title>Full-Stack Developer — Portfolio Preview<\/title>/i);
+  assert.match(html, /<title>Muhammad Mustafa — Frontend Developer<\/title>/i);
   assert.match(html, /I build/);
-  assert.match(html, /digital products/);
-  assert.match(html, /Ideas, engineered into form/);
-  assert.match(html, /Relay/);
-  assert.match(html, /Lumen/);
-  assert.match(html, /Atlas/);
+  assert.match(html, /web experiences/);
+  assert.match(html, /Products built end to end/);
+  assert.match(html, /Drip/);
+  assert.match(html, /Purplexity/);
+  assert.match(html, /github\.com\/Mustafajv\/drip/);
+  assert.match(html, /github\.com\/Mustafajv\/purplexity/);
+  assert.match(html, /Live demo · soon/);
+  assert.match(html, /Freelance Web Developer/);
+  assert.match(html, /Bachelor of Science in Computer Science/);
+  assert.match(html, /Mustafa\.jvd69@gmail\.com/);
   assert.match(html, /id="capabilities"/);
+  assert.match(html, /id="skills"/);
   assert.match(html, /id="process"/);
   assert.match(html, /id="contact"/);
   assert.match(html, /aria-disabled="true"/);
 });
 
-test("keeps the preview private, accessible, and free of starter UI", async () => {
+test("keeps the portfolio accessible and free of starter UI", async () => {
   const [page, layout, styles, matrix, content, packageJson] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
@@ -58,8 +64,9 @@ test("keeps the preview private, accessible, and free of starter UI", async () =
   assert.doesNotMatch(page, /className=["'][^"']*card/i);
   assert.doesNotMatch(layout, /codex-preview|Starter Project/);
   assert.doesNotMatch(packageJson, /react-loading-skeleton/);
-  assert.doesNotMatch(content, /mailto:|@gmail|phone|résumé|resume/i);
-  assert.match(content, /url: null/);
+  assert.match(content, /Muhammad Mustafa/);
+  assert.match(content, /linkedin\.com\/in\/mustafa-javed-10b20323b/);
+  assert.match(content, /liveUrl: null/);
 
   assert.match(matrix, /const FRAME_DELAY = 70/);
   assert.match(matrix, /const FONT_SIZE = 16/);

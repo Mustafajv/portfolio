@@ -1,79 +1,173 @@
 export const portfolioContent = {
   identity: {
-    firstName: "NAME",
-    availability: "Available for select projects",
+    firstName: "Mustafa",
+    fullName: "Muhammad Mustafa",
+    role: "Frontend Developer",
+    location: "Karachi, Pakistan",
+    availability: "Open to frontend opportunities",
   },
   hero: {
-    eyebrow: "Full-stack developer",
+    eyebrow: "React · Next.js · TypeScript",
+    headlineBefore: "I build",
+    headlineEmphasis: "web experiences",
+    headlineAfter: "that feel fast.",
     intro:
-      "From sharp interfaces to reliable systems, I turn ambitious concepts into fast, maintainable web products built to move.",
+      "Frontend-focused developer building responsive, accessible products with React, Next.js, and TypeScript—backed by practical full-stack experience.",
   },
   projects: [
     {
-      name: "Relay",
+      name: "Drip",
+      type: "Full-stack e-commerce · 2026",
       description:
-        "A collaboration platform concept that turns scattered conversations, decisions, and momentum into one focused workspace.",
-      stack: ["Next.js", "Node.js", "PostgreSQL"],
+        "A fashion commerce application with product discovery, cart and checkout flows, order management, admin tooling, secure authentication, and role-based access.",
+      stack: [
+        "TypeScript",
+        "React",
+        "Express.js",
+        "PostgreSQL",
+        "Prisma",
+        "Better Auth",
+      ],
+      sourceUrl: "https://github.com/Mustafajv/drip",
+      liveUrl: null as string | null,
     },
     {
-      name: "Lumen",
+      name: "Purplexity",
+      type: "AI search application · 2026",
       description:
-        "A commerce experience concept designed around fast discovery, decisive storytelling, and a frictionless path to purchase.",
-      stack: ["React", "TypeScript", "Commerce API"],
-    },
-    {
-      name: "Atlas",
-      description:
-        "An operations platform concept that brings live workflows, permissions, and reporting into one calm, legible system.",
-      stack: ["Next.js", "API design", "Realtime"],
+        "A Perplexity-style search experience that streams web-grounded AI answers with cited sources, OAuth sign-in, follow-up questions, and persistent conversations.",
+      stack: [
+        "TypeScript",
+        "React",
+        "Express.js",
+        "Supabase",
+        "OpenRouter",
+        "Tavily",
+      ],
+      sourceUrl: "https://github.com/Mustafajv/purplexity",
+      liveUrl: null as string | null,
     },
   ],
+  experience: {
+    role: "Freelance Web Developer",
+    company: "Self-employed · Remote",
+    period: "August 2025",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
+    highlights: [
+      "Delivered a modern, mobile-friendly portfolio website for a client within a two-week timeline.",
+      "Translated client requirements into clean components, responsive layouts, and a performant frontend implementation.",
+      "Managed the full project lifecycle independently—from requirements and design through testing and handoff.",
+    ],
+  },
   capabilities: [
     {
-      title: "Full-stack delivery",
+      title: "Frontend engineering",
       description:
-        "Product thinking, technical direction, and implementation from the first sketch through a production-ready release.",
+        "Responsive, mobile-first interfaces built with React, Next.js, TypeScript, semantic HTML, modern CSS, and accessibility in mind.",
     },
     {
-      title: "Frontend systems",
+      title: "Full-stack applications",
       description:
-        "Fast, accessible interfaces with clear interaction patterns, resilient components, and details that hold up at every screen size.",
+        "REST APIs, authentication, state management, Node.js and Express backends, plus PostgreSQL, MongoDB, Prisma, and Supabase.",
     },
     {
-      title: "Backend & integrations",
+      title: "AI integrations",
       description:
-        "Practical APIs, data models, authentication, and service integrations designed to stay understandable as the product grows.",
+        "Streaming LLM responses, web-grounded search, prompt workflows, and product-ready integrations using OpenRouter and Tavily.",
     },
   ],
+  skillGroups: [
+    {
+      label: "Frontend",
+      skills: [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "React Router",
+        "Context API",
+      ],
+    },
+    {
+      label: "Backend & data",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "PostgreSQL",
+        "MongoDB",
+        "Prisma",
+        "Supabase",
+      ],
+    },
+    {
+      label: "Quality & tools",
+      skills: [
+        "Accessibility",
+        "Performance",
+        "SEO",
+        "Git",
+        "GitHub",
+        "Docker",
+        "Postman",
+      ],
+    },
+    {
+      label: "AI development",
+      skills: [
+        "OpenRouter",
+        "Tavily",
+        "Streaming APIs",
+        "Prompt Engineering",
+        "Agentic Workflows",
+      ],
+    },
+  ],
+  education: {
+    degree: "Bachelor of Science in Computer Science",
+    university: "Sindh Madressatul Islam University",
+    location: "Karachi, Pakistan",
+    period: "2022–2026",
+    status: "Graduating 2026",
+  },
   manifesto: {
-    headline: "Clear thinking. Sharp execution. No handoff gap.",
+    headline: "Accessible by default. Maintainable by design.",
     copy:
-      "I work across interface and infrastructure, keeping the original idea intact while turning it into something people can actually use. Fewer layers. Faster decisions. Better products.",
+      "I care about the details people feel: clear hierarchy, quick feedback, thoughtful responsive behavior, and code that stays understandable as a product grows.",
   },
   process: [
     {
-      title: "Align",
+      title: "Discover",
       description:
-        "Define the real problem, the audience, and the smallest outcome worth shipping.",
+        "Clarify the audience, requirements, constraints, and smallest valuable release.",
     },
     {
-      title: "Architect",
+      title: "Design",
       description:
-        "Turn uncertainty into a clear experience, technical shape, and delivery path.",
+        "Shape the information, responsive experience, and technical approach.",
     },
     {
       title: "Build",
       description:
-        "Create the product in tight, visible increments with quality built into the system.",
+        "Develop in focused increments with clean components and visible progress.",
     },
     {
-      title: "Refine",
+      title: "Validate",
       description:
-        "Test the edges, sharpen the details, and leave behind a product ready to evolve.",
+        "Test usability, responsiveness, performance, and the product’s critical paths.",
     },
   ],
   contact: {
-    label: "Connect on LinkedIn",
-    url: null,
+    email: "Mustafa.jvd69@gmail.com",
+    phone: "+92 347 355 2113",
+    location: "Karachi, Pakistan",
+    linkedin: {
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/mustafa-javed-10b20323b/",
+    },
+    github: {
+      label: "GitHub",
+      url: "https://github.com/Mustafajv",
+    },
   },
 };
